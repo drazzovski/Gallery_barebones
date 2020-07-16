@@ -1,4 +1,5 @@
-import SearchTwoToneIcon from '@material-ui/icons/SearchTwoTone';
+import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
+import MicOutlinedIcon from '@material-ui/icons/MicOutlined';
 import React, { useState } from 'react';
 
 import clsx from 'clsx';
@@ -17,29 +18,6 @@ export default function SearchBar() {
         <>
 
             <div className={clsx("search-wrapper", { 'is-active': searchStatus1 })}>
-                <div className="search-options">
-                    <div>
-                        <input name="type" type="radio" value="type-audio" id="type-audio" />
-                        <label htmlFor="type-audio">
-                            <FontAwesomeIcon icon={['far', 'file-audio']} className="font-size-lg" />
-                            <span>Audio</span>
-                        </label>
-                    </div>
-                    <div>
-                        <input name="type" type="radio" value="type-video" id="type-video" />
-                        <label htmlFor="type-video">
-                            <FontAwesomeIcon icon={['fas', 'film']} className="font-size-lg" />
-                            <span>Videos</span>
-                        </label>
-                    </div>
-                    <div>
-                        <input name="type" type="radio" value="type-images" id="type-images" />
-                        <label htmlFor="type-images">
-                            <FontAwesomeIcon icon={['far', 'images']} className="font-size-lg" />
-                            <span>Images</span>
-                        </label>
-                    </div>
-                </div>
                 <TextField
                     variant="outlined"
                     size="small"
@@ -47,9 +25,10 @@ export default function SearchBar() {
                     id="input-with-icon-textfield22-3"
                     onFocus={toggleSearch1} onBlur={toggleSearch1}
                     InputProps={{
-                        startAdornment: (
-                            <InputAdornment position="start">
-                                <SearchTwoToneIcon />
+                        endAdornment: (
+                            <InputAdornment position="end">
+                                <SearchOutlinedIcon />
+                                <MicOutlinedIcon />
                             </InputAdornment>
                         ),
                     }}

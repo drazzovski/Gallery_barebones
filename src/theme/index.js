@@ -25,6 +25,21 @@ const MuiTheme = createMuiTheme({
     warning: {
       main: '#f4772e'
     },
+    templatesColor: {
+      main: '#694F5D'
+    },
+    videosColor: {
+      main: '#5EC2D7'
+    },
+    clipsColor: {
+      main: '#E94581'
+    },
+    imagesColor: {
+      main: '#37474F'
+    },
+    audioColor: {
+      main: '#68A691'
+    },
     helpers: {
       primary: '#3c44b1',
       main: 'rgba(25, 46, 91, .035)'
